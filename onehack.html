@@ -49,10 +49,22 @@
     <div class="container">
         <h1 class="title">SwiHack v1.0</h1>
         <p class="useragent">User-Agent: <span id="useragent"></span></p>
+        <button class="button" onclick="openFilePicker()">test</button>
     </div>
 
     <script>
         document.getElementById('useragent').textContent = navigator.userAgent;
+
+        function openFilePicker() {
+            var input = document.createElement('input');
+            input.type = 'file';
+
+            input.addEventListener('change', function(event) {
+                var file = event.target.files[0];
+            });
+
+            input.click();
+        }
     </script>
 </body>
 </html>
