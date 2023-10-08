@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SwiHack</title>
+    <style>
+        body {
+            background-color: #808080;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+        
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        
+        .title {
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+        
+        .button {
+            background-color: #ff6600;
+            color: #fff;
+            font-size: 24px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        
+        .button:hover {
+            background-color: #ff8533;
+        }
+        
+        .useragent {
+            font-size: 18px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">SwiHack</h1>
+        <a href="onehack.html" class="button">SwiHack v1.0</a>
+        
+    </div>
+
+    <script>
+        document.getElementById('useragent').textContent = navigator.userAgent;
+    </script>
+</body>
+</html>
